@@ -15,3 +15,5 @@ const string = prompt('Enter a string: ');
 
 const result = reverseString(string);
 console.log(result);
+
+modules.exports={reverseString}
