@@ -1,4 +1,4 @@
-# 30-Day JavaScript Data Structures and Algorithms Challenge
+# JavaScript Data Structures and Algorithms Challenge
 
 Welcome to the 30-Day JavaScript Data Structures and Algorithms Challenge! This challenge is designed to help you improve your understanding of data structures and algorithms using JavaScript. Each day, you will be presented with a new problem or concept to explore and implement.
 
