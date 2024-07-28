@@ -37,18 +37,19 @@ class LinkedList {
       // if head is the value to remove from the list
       if(this.head.value === value){
           this.head = this.head.next;
+          this.size--;
       }
-      if(this.head.value !== value){
-        let matchNode = this.head;
-        // loop through all nodes to get the one that matches the value
-        while(matchNode.value !== value){
-            matchNode = matchNode.next;
-        }
-        if(matchNode.value === value){
-          matchNode.value = null;
-        }
-         
+      let previousNode = this.head;
+      let currentNode = this.head.next;
+
+      while(currentNode != null){
+         if(currentNode == value){
+             previousNode = currentNode
+             currentNode = currentNode.next
+         }
       }
+      previousNode = currentNode
+      currentNode = currentNode.next
     }
    }
   //TODO: method to get first node
@@ -76,5 +77,5 @@ let linkedList = new LinkedList();
 linkedList.addNode(1);
 linkedList.addNode(2);
 linkedList.addNode(3);
-linkedList.removeNode(2);
+linkedList.removeNode(1);
 linkedList.printNodesInList();
